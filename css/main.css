@@ -52,10 +52,44 @@
 
 #product .contentsBox .rolling li a p { margin-top: 20px; }
 
-#product .contentsBox .navigation { margin-top: 50px; }
+#product .contentsBox .navigation { margin-top: 50px; display: flex; align-items: center; }
 
-#product .contentsBox .navigation button { width: 70px; height: 70px; border: 1px solid #ccc; border-radius: 100%; background: none; font-size: 36px; display: inline-flex; align-items: center; justify-content: center; }
+#product .contentsBox .navigation a { text-transform: uppercase; margin-left: 30px; }
+
+#product .contentsBox .navigation button { width: 70px; height: 70px; border: 1px solid #ccc; border-radius: 100%; background: none; font-size: 36px; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px; }
 
 #product .contentsBox .navigation button.prev:before { font-family: "Material Icons"; content: "chevron_left"; display: inline-block; margin-left: 0; vertical-align: top; }
 
 #product .contentsBox .navigation button.next:before { font-family: "Material Icons"; content: "chevron_right"; display: inline-block; margin-left: 0; vertical-align: top; }
+
+#make { min-height: 100vh; display: flex; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+#make .title { font-size: 42px; margin-bottom: 30px; }
+
+#make p { line-height: 1.5; color: #999; margin-bottom: 30px; }
+
+#make img { width: 70vw; }
+
+#news { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 200px; }
+
+#news .title { font-size: 42px; margin-bottom: 50px; }
+
+#news .menu { display: flex; justify-content: flex-end; margin-bottom: 80px; font-weight: 700; }
+
+#news .menu li { margin-left: 50px; }
+
+#news .contents { display: flex; justify-content: space-between; }
+
+#news .contents li { flex-basis: calc(25% - 20px); }
+
+#news .contents li .dateBox { margin-bottom: 30px; }
+
+#news .contents li .dateBox span { font-weight: 700; text-transform: uppercase; }
+
+#news .contents li .dateBox .date { font-weight: 400; color: #999; position: relative; padding-left: 10px; margin-left: 10px; }
+
+#news .contents li .dateBox .date:before { display: block; position: absolute; content: ""; display: block; width: 1px; height: 10px; background-color: #333; left: 0; top: 50%; transform: translateY(-50%); }
+
+#news .contents li .txt { font-size: 28px; font-weight: 500; margin-bottom: 30px; display: -webkit-box; height: 3em; overflow: hidden; line-height: 1.5; -webkit-line-clamp: 2; /* autoprefixer: off */ -webkit-box-orient: vertical; word-break: break-all; }
+
+#news .contents li .more { text-transform: uppercase; }
